@@ -40,9 +40,14 @@ def hello_world():
             return render_template('index.html', answer=answer)
         else:
             print('empty input')
+            return
         
         if inp1 == None:
             print('empty input')
+            return
+
         elif inp2 == None:
             print('empty input')
+            return
+
     return render_template('index.html', title=title)
